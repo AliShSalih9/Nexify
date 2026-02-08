@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DTheme {
   // Brand Color
@@ -18,6 +19,8 @@ class DTheme {
       foregroundColor: Colors.white,
       elevation: 0,
     ),
+    fontFamily: GoogleFonts.inter().fontFamily,
+
     textTheme: const TextTheme(
       headlineLarge: TextStyle(
         fontSize: 32,
@@ -31,6 +34,7 @@ class DTheme {
   static ThemeData dark = ThemeData(
     useMaterial3: true,
     brightness: Brightness.dark,
+    fontFamily: GoogleFonts.inter().fontFamily,
     colorScheme: ColorScheme.fromSeed(
       seedColor: _primaryBlue,
       brightness: Brightness.dark,
